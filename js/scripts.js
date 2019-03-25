@@ -6,6 +6,8 @@ var firstLast = function(firstLetter, lastLetter) {
     alert(result);
   var result = lastLetter + firstLetter;
     alert(result);
+  var addToSentence = sentence + result;
+    alert(addToSentence);
 };
 firstLast();
 // var result = firstLast(firstLetter, lastLetter);
