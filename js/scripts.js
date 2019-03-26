@@ -1,12 +1,17 @@
 var sentence = prompt("I am a sentence.");
 // var sentenceLength = sentence.Length()
+var result = "";
 var firstLast = function(firstLetter, lastLetter) {
   var firstLetter = sentence.slice(0,1).toUpperCase();
   var lastLetter = sentence.slice(-1).toUpperCase();
   var result = lastLetter + firstLetter;
-    alert(result);
+  return result;
+  };
+ var sentenceWithLetters = function(sentence, result){
   var addToSentence = sentence + result;
-    alert(addToSentence);
+  return(addToSentence);
+  };
+var middleStuff = function(addToSentence){
   var midletters = parseInt(sentence.length)/2;
   var midLetter = sentence.slice(midletters, (midletters+ 1));
   var finalOutput = midLetter + addToSentence;
@@ -21,4 +26,7 @@ var firstLast = function(firstLetter, lastLetter) {
 //   var finalOutput = midLetter + addToSentence;
 //   alert(finalOutput);
 // };
-firstLast();
+var result = firstLast();
+var addToSentence = sentenceWithLetters(sentence, result);
+var middleStuff = middleStuff(addToSentence);
+middleStuff();
